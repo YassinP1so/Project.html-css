@@ -1,0 +1,373 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+header {
+    background-color: rgb(231, 222, 222);
+    width: 100% ;
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 200px;
+    background: transparent;
+
+} 
+
+
+
+.logo{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: 650;
+    font-size: 1.5em;
+    transition: 0.7s ease;
+
+}
+.button {
+    position: relative;
+    overflow: hidden;
+    height: 3rem;
+    padding: 0 2rem;
+    border-radius: 1.5rem;
+    background: #3d3a4e;
+    background-size: 400%;
+    color: #fff;
+  }
+  
+  .button:hover::before {
+    transform: scaleX(1);
+  }
+  
+  .button-content {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: 0 50%;
+    width: 100%;
+    height: inherit;
+    border-radius: inherit;
+    background: linear-gradient(
+      82.3deg,
+      rgba(150, 93, 233, 1) 10.8%,
+      rgba(99, 88, 238, 1) 94.3%
+    );
+    transition: all 0.475s;
+  }
+
+
+.logo:hover{
+    color: #222;
+    transform: scale(1.1);
+}
+.input {
+    margin: 30px;
+    background: none;
+    border: none;
+    outline: none;
+    max-width: 190px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 9999px;
+    box-shadow: inset 2px 5px 10px rgb(5, 5, 5);
+    color: #fff;
+  }
+ 
+
+.card:hover {
+  transform: translateY(-5px);
+  transition: all .5s ease-in-out;
+}
+  
+
+
+.navigation a{
+    color: rgb(255, 255, 255);;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1em;
+    padding-left: 40px;
+    transition: 0.4s ease;
+}
+
+.navigation a:hover{
+    transform: scale(1.1);
+    color: #222;
+    
+}
+
+section{
+    padding: 100px 100px;
+}
+
+.main {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: url(dino-rhinosaur-done-wp-pink-with-pic.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.main h2{
+    color: aliceblue;
+    font-size: 1.4em;
+    font-weight: 500;
+}
+
+.main h2 span{
+    display: inline-block;
+    margin-top: 10px;
+    color: darkred;
+    font-size: 2em;
+    font-weight: 250;
+}
+
+.main h3{
+    color: aliceblue;
+    font-size: 3em;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+.social-icons{
+    margin-top: 20px;
+}
+
+
+
+.social-icons a{
+    color: aliceblue;
+    font-size: 1.7em;
+    padding-right: 30px;
+    transition: 0.7s ease;
+
+}
+
+.social-icons a:hover{
+    color: rgb(131, 32, 32);
+    transform: scale(1.1);
+    }
+
+    .content{
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+    
+    }
+    .projects{
+        background-color: rgb(0, 0, 46);
+    
+    }
+    
+    .projects.content{
+        margin-top: 30px;
+    
+    }
+    
+    .project-card{
+        background-color: aliceblue;
+        border: 3px solid #fff;
+        min-height: 14em;
+        width: 23em;
+        overflow: hidden;
+        border-radius: 10px;
+        margin: 20px;
+        transition: 0.7s ease;
+    }
+    
+    .project-card:hover{
+        transform: scale(1.1);
+    }
+    .project-card :hover .project-image{
+        opacity: 0.8;
+    }
+    
+    .project-image img{
+        width: 100%;
+    }
+    
+    .project-info{
+        padding: 1em;
+    }
+    
+    .project-category{
+        font-size: 0.8em;
+        color: rgb(0, 0, 0);
+    }
+    
+    .project-title{
+        display: flex;
+        justify-content: space-between;
+        text-transform: uppercase;
+        font-weight: 800;
+        margin-top: 10px;
+    }
+    
+    .more-details{
+        text-decoration: none;
+        color: red;
+    }
+    
+    .more-details:hover{
+        color: purple;
+    }
+    
+    
+    .contact .icon{
+        font-size: 4.5em;
+        width: 300;
+    
+    }
+    
+    .contact .info h3{
+        color: #000;
+    }
+    
+    .contact .info p{
+        font-size: 1.3em;
+    }
+    
+    
+    .card {
+        transition: 0.5s ease;
+    }
+    .loader {
+        width: 6em;
+        height: 6em;
+        font-size: 10px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      
+      .loader .face {
+        position: absolute;
+        border-radius: 50%;
+        border-style: solid;
+        animation: animate023845 3s linear infinite;
+      }
+      
+      .loader .face:nth-child(1) {
+        width: 100%;
+        height: 100%;
+        color: gold;
+        border-color: currentColor transparent transparent currentColor;
+        border-width: 0.2em 0.2em 0em 0em;
+        --deg: -45deg;
+        animation-direction: normal;
+      }
+      
+      .loader .face:nth-child(2) {
+        width: 70%;
+        height: 70%;
+        color: rgb(189, 16, 16);
+        border-color: currentColor currentColor transparent transparent;
+        border-width: 0.2em 0em 0em 0.2em;
+        --deg: -135deg;
+        animation-direction: reverse;
+      }
+      
+      .loader .face .circle {
+        position: absolute;
+        width: 50%;
+        height: 0.1em;
+        top: 50%;
+        left: 50%;
+        background-color: transparent;
+        transform: rotate(var(--deg));
+        transform-origin: left;
+      }
+      
+      .loader .face .circle::before {
+        position: absolute;
+        top: -0.5em;
+        right: -0.5em;
+        content: '';
+        width: 1em;
+        height: 1em;
+        background-color: currentColor;
+        border-radius: 50%;
+        box-shadow: 0 0 2em,
+                      0 0 4em,
+                      0 0 6em,
+                      0 0 8em,
+                      0 0 10em,
+                      0 0 0 0.5em rgb(255, 255, 255);
+      }
+      
+      @keyframes animate023845 {
+        to {
+          transform: rotate(1turn);
+        }
+      }
+    .card:hover{
+        transform: scale(1.1);
+    }
+    
+    input{
+        padding: .5em 1em;
+        border-radius: 6px;
+        background-color: #333;
+        color: #fff;
+        font-family: 'lato', sans-serif;
+        font-size: .8em;
+        transition: 0.7s ease;
+    
+      
+    }
+    
+    input:hover{
+        color: rgb(255, 0, 0);
+        transform: scale(1.1);
+    
+    }
+    
+    option{
+        padding: .5em 1em;
+        border-radius: 6px;
+        background-color: rgb(255, 0, 0);
+        color: #fff;
+        font-family: 'lato', sans-serif;
+        font-size: .8em;
+    
+    }
+    
+    header .logo a{
+        transition: 0.7s ease;
+    }
+    header a:hover{
+        transform: scale(1.1);
+        color: indigo;
+    }
+    
+    
+    
+    .button:hover{
+        transform: scale(1.1);
+        color: red;
+    }
+    
+    .Azea{
+        color: green;
+    }
+
